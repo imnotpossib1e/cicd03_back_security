@@ -19,8 +19,8 @@ public class WebMvcConfig implements WebMvcConfigurer {
      registry.addMapping("/**")
     // .allowedOrigins("http://localhost:5173","http://localhost:4173")
      //.allowedOrigins("http://43.200.184.113:5173", "http://43.200.184.113:4173")
-      .allowedOrigins("http://3.35.205.156", "http://3.35.205.156:80") // 프론트 EC2 public ip - 도메인 없는 경우
-//      .allowedOrigins("http://heejung.n-e.kr", "https://heejung.n-e.kr") // // 프론트 도메인 - 도메인 있는 경우
+//      .allowedOrigins("http://3.35.205.156", "http://3.35.205.156:80") // 프론트 EC2 public ip - 도메인 없는 경우
+      .allowedOrigins("http://jhyun.o-r.kr/", "https://jhyun.o-r.kr/") // // 프론트 도메인 - 도메인 있는 경우
      .allowedMethods("OPTIONS","GET","POST","PUT","DELETE");
   }
 }

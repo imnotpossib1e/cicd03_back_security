@@ -10,9 +10,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
 * WebMvcConfigurer 를 이용해서 @CrossOrigin 글로벌 설정
+ *
+ * Security Config에서 전역으로 설정한 경우 이 코드는 필요 X
 * */
-@Configuration
-@EnableWebMvc
+//@Configuration
+//@EnableWebMvc
 public class WebMvcConfig implements WebMvcConfigurer {
   @Override
   public void addCorsMappings(CorsRegistry registry) {
